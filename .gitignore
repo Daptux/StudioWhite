@@ -1,0 +1,20 @@
+# Dependencias
+node_modules/
+**/node_modules/
+
+# Builds
+frontend/dist/
+dist/
+
+# Variables de entorno
+**/.env
+!**/.env.example
+
+# Subidas de imágenes
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs / sistema
+*.log
+.DS_Store
+.vite

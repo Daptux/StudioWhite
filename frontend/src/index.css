@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* compensa el header fijo al hacer scroll a secciones */
+  }
+
+  body {
+    @apply bg-white text-stone-500 font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Titulos grandes con serif editorial elegante */
+  h1,
+  h2 {
+    @apply font-display font-medium text-stone-900;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-stone-900;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
+  }
+
+  /* Espaciado generoso y aireado entre secciones */
+  .section {
+    @apply py-24 md:py-32;
+  }
+
+  /* Tarjeta clara minimalista */
+  .card {
+    @apply rounded-2xl border border-stone-200/70 bg-white transition-all duration-500;
+  }
+
+  /* Compatibilidad: clase usada en algunos componentes */
+  .glass {
+    @apply border border-stone-200/70 bg-white shadow-soft;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[0.8rem] font-medium uppercase tracking-[0.12em] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2;
+  }
+
+  .btn-whatsapp {
+    @apply btn bg-accent text-white shadow-lg shadow-accent/20 hover:bg-accent-dark hover:shadow-accent/35 hover:-translate-y-0.5;
+  }
+
+  /* Boton principal: negro elegante */
+  .btn-accent {
+    @apply btn bg-stone-900 text-white hover:bg-stone-700 hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply btn border border-stone-300 text-stone-800 hover:border-stone-900 hover:bg-stone-900 hover:text-white;
+  }
+
+  /* Etiqueta superior de seccion */
+  .section-eyebrow {
+    @apply mb-4 inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-accent;
+  }
+
+  .section-title {
+    @apply font-display font-medium leading-[1.05] text-stone-900 text-[2.5rem] sm:text-5xl md:text-[3.5rem];
+  }
+
+  .lead {
+    @apply text-base leading-relaxed text-stone-500 sm:text-lg;
+  }
+}
+
+/* Scrollbar discreto en navegadores webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #e7e5e4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8894e;
+}

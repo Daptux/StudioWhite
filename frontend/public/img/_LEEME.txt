@@ -1,0 +1,29 @@
+IMÁGENES DEL ESTUDIO
+====================
+
+Por ahora la página usa fotos TEMPORALES (de stock, libres de Unsplash)
+de estudios fotográficos blancos, para mantener la estética mientras
+consigues las fotos reales de tu estudio.
+
+CÓMO PONER TUS FOTOS REALES
+---------------------------
+1. Sube tus fotos a esta carpeta (public/img/).
+2. Recomendado: formato .jpg o .webp, optimizadas (~1600px de ancho).
+3. La forma más fácil: nombra tus fotos EXACTAMENTE igual que estas y
+   reemplaza los archivos (así no tienes que tocar el código):
+
+   hero.jpg        -> imagen grande del inicio (panorámica del estudio)
+   studio-1.jpg    -> Set principal
+   studio-2.jpg    -> Fondo infinito / ciclorama (fondo blanco)
+   studio-3.jpg    -> Zona de maquillaje y vestidor
+   gallery-1.jpg   -> Fotografía de producto
+   gallery-2.jpg   -> Sesión / reels / video en producción
+   gallery-3.jpg   -> Zona de espera y preparación
+
+   (Si prefieres otros nombres, edita las rutas en:
+     - src/data/gallery.js
+     - src/components/Hero.jsx
+     - src/components/Spaces.jsx)
+
+Después de reemplazar las imágenes, vuelve a compilar con:
+   npm run build
