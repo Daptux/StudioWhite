@@ -36,11 +36,17 @@ export default function AdminLayout() {
   const SidebarContent = () => (
     <div className="flex h-full flex-col">
       <div className="flex items-center gap-2.5 px-6 py-5">
-        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-stone-900 text-stone-900">
-          <Camera size={15} strokeWidth={1.8} />
+        <span className="font-display text-2xl font-semibold leading-none tracking-tight text-charcoal">
+          SW
         </span>
-        <span className="font-display text-xl font-semibold leading-none text-stone-900">
-          Studio<span className="italic text-accent"> White</span>
+        <span className="h-7 w-px bg-stone-300" />
+        <span className="flex flex-col leading-none">
+          <span className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-charcoal">
+            Studio White
+          </span>
+          <span className="mt-0.5 text-[0.45rem] font-semibold uppercase tracking-[0.3em] text-accent">
+            Creative House
+          </span>
         </span>
       </div>
 
@@ -119,8 +125,11 @@ export default function AdminLayout() {
           >
             <Menu size={22} />
           </button>
-          <span className="font-display text-lg font-semibold text-stone-900">
-            Studio<span className="italic text-accent"> White</span>
+          <span className="flex items-baseline gap-2">
+            <span className="font-display text-xl font-semibold tracking-tight text-charcoal">SW</span>
+            <span className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-charcoal">
+              Studio White
+            </span>
           </span>
         </div>
 

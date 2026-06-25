@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import { Camera, ArrowLeft, Lock, Loader2 } from 'lucide-react'
+import { ArrowLeft, Lock, Loader2 } from 'lucide-react'
 import { useAuth } from '../lib/auth'
 
 export default function Login() {
@@ -32,12 +32,15 @@ export default function Login() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-stone-50 px-5">
       <div className="w-full max-w-sm">
-        <Link to="/" className="mb-8 flex items-center justify-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-900 text-stone-900">
-            <Camera size={17} strokeWidth={1.8} />
+        <Link to="/" className="mb-8 flex flex-col items-center gap-1">
+          <span className="font-display text-4xl font-semibold leading-none tracking-tight text-charcoal">
+            SW
           </span>
-          <span className="font-display text-2xl font-semibold leading-none text-stone-900">
-            Studio<span className="italic text-accent"> White</span>
+          <span className="font-display text-base font-semibold uppercase tracking-[0.22em] text-charcoal">
+            Studio White
+          </span>
+          <span className="text-[0.5rem] font-semibold uppercase tracking-[0.35em] text-accent">
+            Creative House
           </span>
         </Link>
 

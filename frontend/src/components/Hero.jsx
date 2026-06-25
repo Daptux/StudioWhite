@@ -32,7 +32,7 @@ export default function Hero() {
           >
             <span className="section-eyebrow">
               <span className="h-px w-8 bg-accent" />
-              Estudio fotográfico · Villavicencio
+              Studio White · Creative House
             </span>
           </motion.div>
 
@@ -40,12 +40,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.05 }}
-            className="text-[2.9rem] font-medium leading-[1.02] text-stone-900 sm:text-6xl md:text-7xl"
+            className="text-[2.9rem] font-medium leading-[1.02] text-charcoal sm:text-6xl md:text-7xl"
           >
-            Un espacio en blanco
+            El espacio donde
             <br />
-            para crear algo{' '}
-            <span className="italic text-accent">extraordinario</span>
+            las ideas{' '}
+            <span className="italic text-accent">toman forma</span>
           </motion.h1>
 
           <motion.p

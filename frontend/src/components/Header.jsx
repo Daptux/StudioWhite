@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X, Camera, MessageCircle, Lock } from 'lucide-react'
+import { Menu, X, MessageCircle, Lock } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { NAV_ITEMS, SITE, buildWhatsAppUrl, QUICK_WHATSAPP_MESSAGE } from '../config/site'
 
@@ -34,13 +34,19 @@ export default function Header() {
       }`}
     >
       <nav className="container-px flex h-16 items-center justify-between md:h-20">
-        {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-2.5 group" aria-label={`${SITE.name} - inicio`}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-900 text-stone-900 transition-colors group-hover:bg-stone-900 group-hover:text-white">
-            <Camera size={17} strokeWidth={1.8} />
+        {/* Logo — lockup de marca: SW · STUDIO WHITE / CREATIVE HOUSE */}
+        <a href="#inicio" className="group flex items-center gap-3" aria-label={`${SITE.name} - inicio`}>
+          <span className="font-display text-3xl font-semibold leading-none tracking-tight text-charcoal transition-colors group-hover:text-accent">
+            SW
           </span>
-          <span className="font-display text-2xl font-semibold leading-none text-stone-900">
-            Studio<span className="italic text-accent"> White</span>
+          <span className="h-8 w-px bg-stone-300" />
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-base font-semibold uppercase tracking-[0.22em] text-charcoal">
+              Studio White
+            </span>
+            <span className="mt-1 text-[0.5rem] font-semibold uppercase tracking-[0.35em] text-accent">
+              {SITE.brandSubtitle}
+            </span>
           </span>
         </a>
 

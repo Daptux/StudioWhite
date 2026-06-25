@@ -9,18 +9,24 @@
   }
 
   body {
-    @apply bg-white text-stone-500 font-sans antialiased;
+    @apply bg-linen text-stone-500 font-sans antialiased;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Titulos grandes con serif editorial elegante */
+  /* Titulos grandes con serif editorial elegante (Cormorant Garamond) */
   h1,
   h2 {
-    @apply font-display font-medium text-stone-900;
+    @apply font-display font-medium text-charcoal;
+  }
+
+  /* Titulos secundarios (Playfair Display) */
+  h3,
+  h4 {
+    @apply font-title text-charcoal;
   }
 
   ::selection {
-    @apply bg-accent/20 text-stone-900;
+    @apply bg-accent/25 text-charcoal;
   }
 }
 
@@ -52,13 +58,13 @@
     @apply btn bg-accent text-white shadow-lg shadow-accent/20 hover:bg-accent-dark hover:shadow-accent/35 hover:-translate-y-0.5;
   }
 
-  /* Boton principal: negro elegante */
+  /* Boton principal: charcoal elegante */
   .btn-accent {
-    @apply btn bg-stone-900 text-white hover:bg-stone-700 hover:-translate-y-0.5;
+    @apply btn bg-charcoal text-linen hover:bg-ink-700 hover:-translate-y-0.5;
   }
 
   .btn-outline {
-    @apply btn border border-stone-300 text-stone-800 hover:border-stone-900 hover:bg-stone-900 hover:text-white;
+    @apply btn border border-stone-300 text-charcoal hover:border-charcoal hover:bg-charcoal hover:text-linen;
   }
 
   /* Etiqueta superior de seccion */
@@ -80,12 +86,12 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #f6f4ef;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e7e5e4;
+  background: #d9d1c5;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8894e;
+  background: #8a927d;
 }

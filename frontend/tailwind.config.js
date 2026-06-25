@@ -4,17 +4,23 @@ export default {
   theme: {
     extend: {
       colors: {
+        // ---- Paleta de marca Studio White (brand book) ----
+        linen: '#F6F4EF', // White Linen — fondo principal
+        sand: '#D9D1C5', // Warm Sand — superficies / bordes cálidos
+        stonegrey: '#C9C3B8', // Stone Grey — neutro cálido suave
+        charcoal: '#121212', // Charcoal Black — texto / fondos oscuros
         ink: {
-          950: '#0a0a0b',
-          900: '#101012',
-          800: '#17171a',
-          700: '#1f1f23',
-          600: '#2a2a30',
+          950: '#0a0a0a',
+          900: '#121212',
+          800: '#1c1c1c',
+          700: '#262626',
+          600: '#333333',
         },
+        // Acento de marca: Forest Sage (#8A927D)
         accent: {
-          DEFAULT: '#b8894e',
-          light: '#cda877',
-          dark: '#8f6a39',
+          DEFAULT: '#8A927D',
+          light: '#A7AE9B',
+          dark: '#6E7561',
         },
         whatsapp: {
           DEFAULT: '#25D366',
@@ -22,19 +28,23 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        // Cuerpo de texto
+        sans: ['"Exo 2"', 'system-ui', 'sans-serif'],
+        // Logotipo y títulos principales
         display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        // Títulos secundarios
+        title: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       letterSpacing: {
         tightish: '-0.01em',
       },
       backgroundImage: {
-        'radial-fade': 'radial-gradient(ellipse at top, rgba(184,137,78,0.10), transparent 60%)',
+        'radial-fade': 'radial-gradient(ellipse at top, rgba(138,146,125,0.12), transparent 60%)',
       },
       boxShadow: {
-        glow: '0 12px 30px -12px rgba(184,137,78,0.45)',
-        card: '0 18px 50px -24px rgba(40,33,22,0.25)',
-        soft: '0 1px 2px rgba(40,33,22,0.04), 0 8px 24px -12px rgba(40,33,22,0.12)',
+        glow: '0 12px 30px -12px rgba(138,146,125,0.45)',
+        card: '0 18px 50px -24px rgba(18,18,18,0.18)',
+        soft: '0 1px 2px rgba(18,18,18,0.04), 0 8px 24px -12px rgba(18,18,18,0.10)',
       },
       keyframes: {
         'fade-up': {

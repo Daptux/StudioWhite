@@ -1,4 +1,4 @@
-import { Camera, MapPin, Phone, Instagram, Clock, MessageCircle } from 'lucide-react'
+import { MapPin, Phone, Instagram, Clock, MessageCircle } from 'lucide-react'
 import {
   SITE,
   WHATSAPP_NUMBER,
@@ -16,15 +16,21 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Marca */}
           <div className="lg:col-span-1">
-            <a href="#inicio" className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-900 text-stone-900">
-                <Camera size={17} strokeWidth={1.8} />
+            <a href="#inicio" className="inline-flex flex-col items-start leading-none">
+              <span className="font-display text-4xl font-semibold leading-none tracking-tight text-charcoal">
+                SW
               </span>
-              <span className="font-display text-2xl font-semibold leading-none text-stone-900">
-                Studio<span className="italic text-accent"> White</span>
+              <span className="mt-2 font-display text-base font-semibold uppercase tracking-[0.22em] text-charcoal">
+                Studio White
+              </span>
+              <span className="mt-1 text-[0.55rem] font-semibold uppercase tracking-[0.35em] text-accent">
+                {SITE.brandSubtitle}
               </span>
             </a>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone-500">
+            <p className="mt-4 max-w-xs font-title text-sm italic leading-relaxed text-stone-500">
+              {SITE.slogan}
+            </p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-stone-500">
               {SITE.tagline} en {SITE.city}. Alquila el estudio por horas y crea contenido
               profesional para tu marca, productos y redes sociales.
             </p>

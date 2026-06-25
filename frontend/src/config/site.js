@@ -9,6 +9,12 @@ export const WHATSAPP_NUMBER = '573112258608'
 
 export const SITE = {
   name: 'Studio White',
+  // Descriptor de marca (brand book)
+  brandSubtitle: 'Creative House',
+  // Slogan oficial
+  slogan: 'Diseñado para crear, recordar y destacar.',
+  // Concepto de marca
+  concept: 'El espacio donde las ideas toman forma.',
   tagline: 'Estudio Fotográfico Profesional',
   city: 'Villavicencio, Meta',
   address:
